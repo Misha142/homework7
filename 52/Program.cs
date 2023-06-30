@@ -48,14 +48,14 @@ void SredneeStolb(int[,] inArray)
 { Write("Среднее арифметическое каждого столбца:");
     for (int i = 0; i < inArray.GetLength(1); i++)
     {
-        double count =0;
+        
         double summ = 0;
         for (int j = 0; j < inArray.GetLength(0); j++)
         {
             summ += inArray[j,i];
-           count++;
+           
         }
-        Write ($" {summ/count:f1}");
+        Write ($" {summ/inArray.GetLength(0):f1}");
         
     }
 
